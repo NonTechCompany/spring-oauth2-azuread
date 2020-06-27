@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping
-    public String country() {
-        return "Hello Azure AD";
+    @GetMapping("/azuread")
+    public String azureAD() {
+        return "Hello AzureAD";
     }
 }
