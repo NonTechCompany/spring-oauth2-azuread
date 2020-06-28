@@ -2,6 +2,7 @@ spring:
   security:
     oauth2:
       resourceserver:
+        audience: 992714bf-5782-489c-a563-92554c034412
         jwt:
           issuer-uri: https://sts.windows.net/6dd267b6-3931-4cb1-8998-0daef7059841/
           jwk-set-uri: https://login.microsoftonline.com/6dd267b6-3931-4cb1-8998-0daef7059841/discovery/keys
