@@ -13,6 +13,7 @@ public class Oauth2Configuration extends WebSecurityConfigurerAdapter {
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests(a -> a.antMatchers("/azuread").fullyAuthenticated())
         .exceptionHandling(e -> e.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)))
-        .oauth2Client();
+        .oauth2ResourceServer()
+        .jwt();
   }
 }
