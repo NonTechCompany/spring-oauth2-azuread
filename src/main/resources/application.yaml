@@ -3,5 +3,5 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri:
-          jwk-set-uri:
+          issuer-uri: https://sts.windows.net/6dd267b6-3931-4cb1-8998-0daef7059841/
+          jwk-set-uri: https://login.microsoftonline.com/6dd267b6-3931-4cb1-8998-0daef7059841/discovery/keys
