@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/azuread")
-    @PreAuthorize("hasRole('Reader')")
+    @PreAuthorize("hasAuthority('Reader')")
     public String azureAD() {
         return "Hello AzureAD";
     }
